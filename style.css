@@ -1,0 +1,73 @@
+body{
+    background-color: #C1D2E6;
+    font-family: Verdana;
+    max-width: 900px; /*adicionar largura no site para ele não ocupar a tela toda, 
+                      o max indica que se a tela for menor que 900px ele vai se adapatar*/
+    margin: auto; /*quando não sabemos o tamanho da tela que vai visualizar é necessario deixar em auto, 
+                  criando espaçamentos nos dois lados de forma igualada*/
+}
+
+.photo{
+    border: 1px solid #1E2529;
+    border-radius: 50%;;
+}
+
+#title, .subtitle, .post_title{
+    color: #16171C;
+}
+#title{
+    font-size: 40px;
+    /*colocar o texto em caixa alta*/
+    text-transform: uppercase;
+}
+.a{
+    /*colcoar linha ao centro*/
+    text-decoration: line-through;
+    color: #16171C;
+}
+
+
+.post_title{
+    font-size:16px;
+    font-style: italic;
+    /*zerando a margem adicionada pelo navegador e colocando na parte inferior*/
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.post{
+    background-color: white;
+    /*espaçamento entre o conteudo e a borda*/
+    padding: 15px;
+    /* borda*/
+    border: 3px solid #C8CEDB;
+    /*margin, espaçamento entre os elementos*/
+    margin-bottom: 15px;
+        /*deixar arrendodado*/
+
+    border-radius: 10px 10px;
+}
+.post_content{
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: capitalize; /*primeira letra de cada palavra em maiusculo*/
+    /*text-align: center;*/
+}
+
+.post_image{
+    margin-bottom: 15px;
+    /*width: 100%;*/  /*caso a imagem fique maior do que a borda*/
+}
+
+.contacts_list{
+    list-style-type: none;/*remove os pontinhos da lista*/
+padding-left: 15px;
+}
+
+/*aqui esta escrito a sequencia que esta seguindo dentro do ul do rodapé(footer),
+que para acessar o "a" do link é preciso colocar todo o caminho para chegar ate ele.
+O .contacts_list ja representa o ul, 
+depois coloca o li e por ultimo o "a" que é aonde queremos modificar */
+.contacts_list li a{
+text-decoration: none;
+}
